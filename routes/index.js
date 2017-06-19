@@ -7,7 +7,9 @@ router.get('/user', async (ctx, next) => {
     type: '普通用户',
     lang: 'I`am shabi'
   }
-  
+  // ctx.header = {
+  //   'Access-Control-Allow-Origin': '*'
+  // }
   ctx.body = usr
 })
 
